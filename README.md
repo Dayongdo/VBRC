@@ -55,7 +55,12 @@ If you insert the cartridge without a shell, it will look like this when connect
 
 
 # ⚠️Known Issues
-Successfully tested with Bound High — it works great!
+<p align="center">
+  <img src="https://github.com/Dayongdo/VirtualBoyRC/blob/main/IMG/05.jpg" width="40%">
+  <img src="https://github.com/Dayongdo/VirtualBoyRC/blob/main/IMG/06.jpg" width="42%">
+</p>
+
+**Successfully tested with Bound High — it works great!**
 
 However, some ROMs (e.g. Jack Bros., Hyper Fighting) did not work.
 
