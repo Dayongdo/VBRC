@@ -1,40 +1,79 @@
+# Celebrating 30 Years of the Virtual Boy
+In celebration of the Virtual Boy’s 30th anniversary, here’s a DIY cartridge project for fans and builders alike.
+
 # VBRC
 Build Virtual Boy Rom Cartridge by yourself!
 
-# INTRO
-There's lot of cheap alternative repo cartridge at other consoles, But not Virtual boy!
+<p align="center">
+  <img src="https://github.com/Dayongdo/VirtualBoyRC/blob/main/IMG/01.png" width="50%">
+  <img src="https://github.com/Dayongdo/VirtualBoyRC/blob/main/IMG/03.JPG" width="30%">
+</p>
 
-So, Here is cheap way DIY solution.
+# Introduction
+There are plenty of cheap alternative repro cartridge for other consoles, But not for Virtual boy!
 
-**I'm not arguing who sells repo cartridge of Virtual boy, Just giving another choice.**
+So, here's cheap DIY solution.
 
-Due to small fan number of Virtual boy, there's no reprodutions at china.
-So you need to prepair some parts.
+**I'm not arguing with those who sell repro cartridges for the Virtual Boy — I'm just offering another choice.**
+
+Due to small VIrtual Boy fanbase, there are no reprodution parts made in China.
+So you'll need to prepare some parts yourself.
 
 # Files
-+ VirtualBoy_RomCart_c.gerber : Virtual Boy Cartridge Board File
-+ VIrtualBoy_RomCart_c.stl : Cartridge Shell for 3D print
-+ VIrtualBoy_RomCart_c.dxr : Cartridge Shell for laser cut out (acryllic 2mm)
+|File|Desc|
+|:--:|:--:|
+|VBRC_C.gerber|Virtual Boy Cartridge Board File|
+|VBRC.stl|Cartridge Shell for 3D print|
+|VBRC.dwg|Cartridge Shell for laser cut out (2mm acrylic)|
 
 # BOM List
-|Desc|Ref|
+|Comp|Desc|
 |:--:|:--:|
-|2mm 2x30p connector||
-|M27C160||
-|FW16W08||
+|2mm 2x30p connector|For cart-to-console connection|
+|M27C160|16Mbit EPROM|
+|FW16W08|Alt for SRAM|
 |0.1uF 0805||
 
 # Build Tips
-The Virtual Boy connector has 4x64x5.3mm size. But most of connector out of world have 4.5x60.5x4.3mm.
+The original Virtual Boy cartridge connector size is 4.0 × 64.0 × 5.3 mm.
 
-So you need to grid 4.5mm to 4mm, but the depth is 1mm shorter than Virtual boy original Connector.
+Most aftermarket connectors are 4.5 × 60.5 × 4.3 mm, so:
 
-I've grid some of connector, and best resault was 4.2mm of height.
+    Sand down the 4.5mm width to 4.0mm.
 
-# Known error
-I've test cartridge by BoundHigh. Which works Great! But other rom doesn't works.
+    Be aware the depth will still be ~1mm shorter than the original.
 
-(Jack Bros, HyperFight)
+Based on my tests, 4.2mm height gave the best result.
 
-I think the reason was at slicing, and fitting to 2mb rom. 
-But My rom writer stops to working so I can't test anymore.
+Since the PCB matches the original Virtual Boy cartridge size, it’s not suited for standalone use.
+Please use the provided case files.
+⚙️ Recommended: M3 5mm flat-head screws for assembly.
+
+If you insert the cartridge without a shell, it will look like this when connected to the Virtual Boy:
+
+<p align="center"> <img src="https://github.com/Dayongdo/VirtualBoyRC/blob/main/IMG/04.JPG" width="60%"> </p>
+
+
+# ⚠️Known Issues
+Successfully tested with Bound High — it works great!
+
+However, some ROMs (e.g. Jack Bros., Hyper Fighting) did not work.
+
+Likely causes:
+
++ ROM slicing errors
++ ROM size mismatch (e.g., not fitting in 2MB space)
+
+My ROM writer stopped working, so I couldn't test further for while.
+
+
+# Future Development
+This project was developed quickly to celebrate the 30th anniversary of the Virtual Boy,
+so the current version only supports EPROM-based ROM writing.
+
+The final goal is to create a single-board version with the following improvements:
+
++ Support for USB-based flash ROM writing
++ Fully enclosed and stable cartridge design
+
+Thanks!
