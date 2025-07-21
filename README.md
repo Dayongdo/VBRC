@@ -22,7 +22,7 @@ So you'll need to prepare some parts yourself.
 # Files
 |File|Desc|
 |:--:|:--:|
-|VBRC_C.gerber|Virtual Boy Cartridge Board File|
+|VBRC_C.zip|Virtual Boy Cartridge Board File|
 |VBRC.stl|Cartridge Shell for 3D print|
 |VBRC.dwg|Cartridge Shell for laser cut out (2mm acrylic)|
 
