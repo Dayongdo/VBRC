@@ -1,8 +1,10 @@
-# VirtualBoyRC
-Build Virtual Boy Rom cartridge by yourself!
+# VBRC
+Build Virtual Boy Rom Cartridge by yourself!
 
 # INTRO
 There's lot of cheap alternative repo cartridge at other consoles, But not Virtual boy!
+
+So, Here is cheap way DIY solution.
 
 **I'm not arguing who sells repo cartridge of Virtual boy, Just giving another choice.**
 
